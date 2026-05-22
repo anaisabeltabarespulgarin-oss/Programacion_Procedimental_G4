@@ -4,62 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
   </head>
   <body>
-    <h1>USUARIOS</h1>
+      
+    <h1 class="title is-1">Usuarios</h1>
 
-    <form>
-      <label>Nombre</label>
-      <input type="text" name="nombre" />
+    <form class="box">
+      <div class="field">
+        <label class="label">Nombre:</label>
+        <div class="control">
+          <input
+            class="input"
+            type="nombre"
+            placeholder="______________________________"
+          />
+        </div>
+      </div>
 
-      <br /><br />
+      <div class="field">
+        <label class="label">Apellidos: </label>
+        <div class="control">
+          <input class="input" type="apellidos" placeholder="______________________________  ______________________________" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Tipo de documento:</label>
+        <div class="control">
+          <input class="input" type="tipo_documento" placeholder="______________________________" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Número de documento:</label>
+        <div class="control">
+          <input class="input" type="numero_documento" placeholder="##########" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Telefono:</label>
+        <div class="control">
+          <input class="input" type="telefono" placeholder="##########" />
+        </div>
+      </div>
 
-      <label>Apellidos</label>
-      <input type="text" name="apellidos" />
+      <div class="field">
+        <label class="label">Correo Electronico: </label>
+        <div class="control">
+          <input class="input" type="correo_electronico" placeholder="ejem: luna19@gmail.com" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Genero:</label>
+        <div class="control">
+          <input class="input" type="genero" placeholder="____________" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Cargo:</label>
+        <div class="control">
+          <input class="input" type="cargo" placeholder="ejem: jefe,cajera,limpiadora,chef,etc..." />
+        </div>
+      </div>
+    
+       
+ 
+      <div class="field">
+        <label class="label">Fecha de nacimiento: </label>
+        <div class="control">
+          <input class="input" type="fecha_nacimiento" placeholder="dd/mmm/aaaa" />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Contraseña:</label>
+        <div class="control">
+          <input class="input" type="contraseña" placeholder="*********" />
+        </div>
+      </div>
 
-      <br /><br />
 
-      <label>Tipo de documento:</label>
-      <input type="text" name="tipo_documento" />
-
-      <br /><br />
-
-      <label>Número de documento:</label>
-      <input type="number" name="numero_documento" />
-
-      <br /><br />
-
-      <label>Telefono:</label>
-      <input type="number" name="telefono" />
-
-      <br /><br />
-
-      <label>Correo electronico:</label>
-      <input type="text" name="correo_electronico" />
-
-      <br /><br />
-
-      <label>Genero:</label>
-      <input type="text" name="genero" />
-
-      <br /><br />
-
-      <label>Cargo:</label>
-      <input type="text" name="Cargo" />
-
-      <br /><br />
-
-      <label>Fecha de nacimiento:</label>
-      <input type="datetime" name="fecha_nacimiento" />
-
-      <br /><br />
-
-      <label>Contraseña:</label>
-      <input type="text" name="contraseña" />
-
-      <br /><br />
-
-      <button type="submit">Guardar</button>
+      <button class="button is-primary">GUARDAR.</button>
     </form>
+   
+  
   </body>
 </html>
