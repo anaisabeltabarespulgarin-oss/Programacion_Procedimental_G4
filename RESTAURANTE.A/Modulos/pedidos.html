@@ -1,18 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="title is-1">Pedidos</h1>
 
     <form class="box">
+       <div class="field">
+        <label class="label">Código del Producto:</label>
+        <div class="control">
+          <input
+            class="input"
+            type="producto"
+            placeholder="####"
+          />
+        </div>
+      </div>
+
+
       <div class="field">
         <label class="label">Producto:</label>
         <div class="control">
@@ -27,13 +40,21 @@
       <div class="field">
         <label class="label">Dirección: </label>
         <div class="control">
-          <input class="input" type="direccion" placeholder="ejem: calle 20 no.13-38 piso 3, el carmen" />
+          <input
+            class="input"
+            type="direccion"
+            placeholder="ejem: calle 20 no.13-38 piso 3, el carmen"
+          />
         </div>
       </div>
       <div class="field">
         <label class="label">Nombre del usuario:</label>
         <div class="control">
-          <input class="input" type="nombre_usuario" placeholder="______________________________  ______________________________  ______________________________" />
+          <input
+            class="input"
+            type="nombre_usuario"
+            placeholder="______________________________  ______________________________  ______________________________"
+          />
         </div>
       </div>
       <div class="field">
@@ -45,7 +66,11 @@
       <div class="field">
         <label class="label">Metodo de pago:</label>
         <div class="control">
-          <input class="input" type="metodo_pago" placeholder="ejem: tarjeta de credito,nequi,efectivo,etc..." />
+          <input
+            class="input"
+            type="metodo_pago"
+            placeholder="ejem: tarjeta de credito,nequi,efectivo,etc..."
+          />
         </div>
       </div>
 
@@ -61,9 +86,9 @@
           <input class="input" type="telefono" placeholder="##########" />
         </div>
       </div>
-   
 
       <button class="button is-primary">GUARDAR.</button>
     </form>
-</body>
+    <script src="../js/pedidos.js"></script>
+  </body>
 </html>
