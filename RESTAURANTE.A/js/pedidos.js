@@ -1,28 +1,26 @@
-//declaracion de variables con let
-let codigoPedProducto = "99";
-let nombrePedProducto = "lechona";
-let direccionPedido = "Calle 45 # 12-34";
-let nombreUsuarioPedido = "Camila Restrepo";
-let cantidadPedido = "2";
-let metodoPago = "Tarjeta de Crédito";
-let valorCancelar = "30000";
-let telefonoPedido = "3159876543";
-
-//validacion de campos
+//funcion y declaracion de variables
 function ValidarDatos() {
+let codigoProducto = document.getElementById("pcc").value;
+let nombreProducto = document.getElementById("nnp").value;
+let direccionPedido = document.getElementById("dip").value;
+let nombreUsuario = document.getElementById("usun").value;
+let cantidadPedido = document.getElementById("dadrt").value;
+let metodoPago = document.getElementById("pagmet").value;
+let valorCancelar = document.getElementById("valpag").value;
+let telefono = document.getElementById("fono").value;
   const soloNumeros = /^[0-9]+$/;
   const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/;
 
   // Validar vacíos
   if (
-    !codigoPedProducto ||
-    !nombrePedProducto ||
+    !codigoProducto ||
+    !nombreProducto ||
     !direccionPedido ||
-    !nombreUsuarioPedido ||
+    !nombreUsuario ||
     !cantidadPedido ||
     !metodoPago ||
     !valorCancelar ||
-    !telefonoPedido
+    !telefono
   ) {
     Swal.fire({
       icon: "error",
@@ -32,7 +30,7 @@ function ValidarDatos() {
     return;
   }
 
-  if (!soloNumeros.test(codigoPedProducto)) {
+  if (!soloNumeros.test(codigoProducto)) {
     Swal.fire({
       icon: "warning",
       title: "Error",
@@ -41,7 +39,7 @@ function ValidarDatos() {
     return;
   }
 
-  if (!soloLetras.test(nombrePedProducto)) {
+  if (!soloLetras.test(nombreProducto)) {
     Swal.fire({
       icon: "warning",
       title: "Error",
@@ -50,7 +48,7 @@ function ValidarDatos() {
     return;
   }
 
-  if (!soloLetras.test(nombreUsuarioPedido)) {
+  if (!soloLetras.test(nombreUsuario)) {
     Swal.fire({
       icon: "warning",
       title: "Error",
@@ -77,7 +75,7 @@ function ValidarDatos() {
     return;
   }
 
-  if (!soloNumeros.test(telefonoPedido)) {
+  if (!soloNumeros.test(telefono)) {
     Swal.fire({
       icon: "warning",
       title: "Error",
@@ -88,9 +86,9 @@ function ValidarDatos() {
 
   console.log("=== DATOS DEL PEDIDO VALIDADOS ===");
   console.log(
-    `Producto: [${codigoPedProducto}] ${nombrePedProducto} x ${cantidadPedido} unidades`,
+    `Producto: [${codigoProducto}] ${nombreProducto} x ${cantidadPedido} unidades`,
   );
-  console.log(`Cliente: ${nombreUsuarioPedido} - Tel: ${telefonoPedido}`);
+  console.log(`Cliente: ${nombreUsuario} - Tel: ${telefono}`);
   console.log(`Despacho a: ${direccionPedido}`);
   console.log(`Pago: ${metodoPago} - Total a pagar: $${valorCancelar}`);
 
@@ -101,4 +99,5 @@ function ValidarDatos() {
   });
 }
 
-ValidarDatos();
+
+document.getElementById("RDAR").onclick = ValidarDatos;

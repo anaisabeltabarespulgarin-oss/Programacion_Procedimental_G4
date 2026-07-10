@@ -1,13 +1,11 @@
-//declaracion variables con let
-let ventas = "54";
-let fecha = "28/06/2026";
-let ingresos = "3000000";
-let egresos = "1000000";
-let concepto = "Pago de inventario del mes";
-let valor = "2000000";
-
-// declaracion de la funcion validar datos
+//funcion y declaracion de variables
 function ValidarDatos() {
+let ventas = document.getElementById("cant_vent").value;
+let fecha = document.getElementById("dat").value;
+let ingresos = document.getElementById("ingre").value;
+let egresos = document.getElementById("egre").value;
+let concepto = document.getElementById("concep").value;
+let valor = document.getElementById("vlr").value;
   const soloNumeros = /^[0-9]+$/;
 
   //validacion de campos
@@ -78,4 +76,6 @@ function ValidarDatos() {
   });
 }
 
-ValidarDatos();
+
+
+document.getElementById("bbg").onclick = ValidarDatos;

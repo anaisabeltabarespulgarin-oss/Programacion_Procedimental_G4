@@ -1,17 +1,15 @@
-//declaracion variables con let
-let nombreUsuario = "Juan Carlos";
-let apellidoUsuario = "Pérez";
-let tipoDocumento = "CC";
-let numeroDocumento = "10203040";
-let telefonoUsuario = "3101234567"; //solo 10 números
-let correoElectronico = "juan.perez@correo.com";
-let generoUsuario = "Masculino";
-let cargoUsuario = "Administrador";
-let fechaNacimiento = "1995-05-12";
-let contrasenaUsuario = "ClaveSegura123"; //minimo 8 caracteres
-
-// declaracion de la funcion validar datos
+//funcion y declaracion de variables
 function ValidarDatos() {
+let nombreUsuario = document.getElementById("nomusuu").value;
+let apellidoUsuario = document.getElementById("apel").value;
+let tipoDocumento = document.getElementById("tipdoc").value;
+let numeroDocumento = document.getElementById("docnuuum").value;
+let telefonoUsuario = document.getElementById("teler").value; 
+let correoElectronico = document.getElementById("c.e").value;
+let generoUsuario = document.getElementById("gen").value;
+let cargoUsuario = document.getElementById("car").value;
+let fechaNacimiento = document.getElementById("naci").value;
+let contrasenaUsuario = document.getElementById("rase").value; 
   const soloNumeros = /^[0-9]+$/; //permite colocar números del 0 al 9
   const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/; //permite colocar letras y espacios
 
@@ -101,4 +99,6 @@ function ValidarDatos() {
     text: "¡Usuario validado y registrado con éxito!",
   });
 }
-ValidarDatos();
+
+
+document.getElementById("guar").onclick = ValidarDatos;

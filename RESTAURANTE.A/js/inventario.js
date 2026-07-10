@@ -1,16 +1,14 @@
-//declaracion de variables con let
-let codigoProducto = "0099";
-let nombreProducto = "Limonada de coco";
-let cantidadProducto = "4";
-let descripcionProducto =
-  "Deliciosa limonada de coco con: Crema de coco fría, limón y hielo";
-let marcaProducto = "Casero Venecia";
-let valorUnitario = "12000";
-let categoriaProducto = "Bebidas";
-let ubicacionProducto = "Nevera Exihibidora 1";
-
-// declaracion de la funcion validar datos
+//funcion y declaracion de variables
 function ValidarDatos() {
+  let codigoProducto = document.getElementById("coddp").value;
+  let nombreProducto = document.getElementById("prod").value;
+  let cantidadProducto = document.getElementById("cdp").value;
+  let descripcionProducto = document.getElementById("dp").value;
+  let marcaProducto = document.getElementById("mdp").value;
+  let valorUnitario = document.getElementById("vudp").value;
+  let categoriaProducto = document.getElementById("cpp").value;
+  let ubicacionProducto = document.getElementById("pu").value;
+
   const soloNumeros = /^[0-9]+$/; //permite colocar números del 0 al 9
   const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/; //permite colocar letras y espacios
 
@@ -100,5 +98,6 @@ function ValidarDatos() {
   });
 } // Aquí cierra la función ValidarDatos()
 
-// aqui se ejecuta la funcion
-ValidarDatos();
+
+document.getElementById("btnGuardar").onclick = ValidarDatos;
+

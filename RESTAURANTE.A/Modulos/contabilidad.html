@@ -16,44 +16,51 @@
      <h1 class="title is-1">Contabilidad</h1>
 
 
-    <form class="box">
+    <div class="box">
   <div class="field">
     <label class="label">Cantidad de Ventas:</label>
     <div class="control">
-      <input class="input" type="ingresos" placeholder="###" />
+      <input class="input" type="cantidad_ventas" placeholder="###" id="cant_vent" />
     </div>
   </div>
 
    <div class="field">
     <label class="label">Ingresos:</label>
     <div class="control">
-      <input class="input" type="egresos" placeholder="$______________________________" />
+      <input class="input" type="ingresos" placeholder="$______________________________" id="ingre" />
     </div>
   </div>
 
   <div class="field">
     <label class="label">Egresos:</label>
     <div class="control">
-      <input class="input" type="egresos" placeholder="$______________________________" />
+      <input class="input" type="egresos" placeholder="$______________________________" id="egre" />
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Valor:</label>
+    <div class="control">
+      <input class="input" type="egresos" placeholder="$______________________________" id="vlr" />
     </div>
   </div>
 
   <div class="field">
     <label class="label">Concepto:</label>
     <div class="control">
-      <input class="input" type="concepto" placeholder="______________________________" />
+      <input class="input" type="concepto" placeholder="______________________________" id="concep"/>
     </div>
   </div>
 
   <div class="field">
     <label class="label">Fecha:</label>
     <div class="control">
-      <input class="input" type="fecha" placeholder="dd/mmm/aaaa" />
+      <input class="input" type="fecha" placeholder="dd/mmm/aaaa" id="dat"/>
     </div>
   </div>
 
-  <button class="button is-primary">GUARDAR.</button>
-</form>
+  <button class="button is-primary" id="bbg">GUARDAR.</button>
+</div>
 
     <script src="../js/contabilidad.js"></script>
 
