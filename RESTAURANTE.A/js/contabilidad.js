@@ -1,4 +1,5 @@
-//declaracion variables con let
+//funcion y declaracion de variables
+function ValidarDatos() {
 let ventas = document.getElementById("cant_vent").value;
 let fecha = document.getElementById("dat").value;
 let ingresos = document.getElementById("ingre").value;
@@ -6,8 +7,6 @@ let egresos = document.getElementById("egre").value;
 let concepto = document.getElementById("concep").value;
 let valor = document.getElementById("vlr").value;
 
-// declaracion de la funcion validar datos
-function ValidarDatos() {
   const soloNumeros = /^[0-9]+$/;
 
   //validacion de campos
