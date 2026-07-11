@@ -83,16 +83,8 @@ let contrasenaUsuario = document.getElementById("rase").value;
     });
     return;
   }
-
-  console.log("=== DATOS DE USUARIO VALIDADOS ===");
-  console.log(`Nombre Completo: ${nombreUsuario} ${apellidoUsuario}`);
-  console.log(`Documento: ${tipoDocumento} - ${numeroDocumento}`);
-  console.log(`Teléfono: ${telefonoUsuario}`);
-  console.log(`Correo: ${correoElectronico}`);
-  console.log(`Género: ${generoUsuario} | Cargo: ${cargoUsuario}`);
-  console.log(`Fecha Nacimiento: ${fechaNacimiento}`);
-  console.log(`Contraseña: ******** (Protegida)`);
-
+  
+  
   Swal.fire({
     icon: "success",
     title: "Éxito",

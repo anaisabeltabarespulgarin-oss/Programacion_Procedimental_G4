@@ -81,16 +81,7 @@ function ValidarDatos() {
     return;
   }
 
-  console.log("=== DATOS DE INVENTARIO VALIDADOS ===");
-  console.log("Código del Producto:", codigoProducto);
-  console.log("Nombre del Producto:", nombreProducto);
-  console.log("Cantidad:", cantidadProducto);
-  console.log("Descripción:", descripcionProducto);
-  console.log("Marca:", marcaProducto);
-  console.log("Valor Unitario:", valorUnitario);
-  console.log("Categoría:", categoriaProducto);
-  console.log("Ubicación:", ubicacionProducto);
-
+  
   Swal.fire({
     icon: "success",
     title: "Éxito",

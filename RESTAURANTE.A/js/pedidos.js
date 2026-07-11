@@ -84,14 +84,7 @@ let telefono = document.getElementById("fono").value;
     return;
   }
 
-  console.log("=== DATOS DEL PEDIDO VALIDADOS ===");
-  console.log(
-    `Producto: [${codigoProducto}] ${nombreProducto} x ${cantidadPedido} unidades`,
-  );
-  console.log(`Cliente: ${nombreUsuario} - Tel: ${telefono}`);
-  console.log(`Despacho a: ${direccionPedido}`);
-  console.log(`Pago: ${metodoPago} - Total a pagar: $${valorCancelar}`);
-
+  
   Swal.fire({
     icon: "success",
     title: "Pedido Procesado",
